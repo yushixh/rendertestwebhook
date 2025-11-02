@@ -28,6 +28,14 @@ app.get('/', (req, res) => {
   }
 });
 
+// Route for GET requests
+app.get('/test_ai', (req, res) => {
+  console.log(`\n=== Receive GET test_ai request ===\n`)
+
+  callOpenAI()
+  res.status(200).end();
+});
+
 // Route for POST requests
 app.post('/', (req, res) => {
   //console.log(`\n=== Receive POST request ===\n`)
