@@ -2,6 +2,9 @@
 const { json } = require('body-parser');
 const express = require('express');
 
+// openai func
+const callOpenAI = require('./callOpenAI');
+
 // Create an Express app
 const app = express();
 
